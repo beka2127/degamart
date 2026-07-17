@@ -14,7 +14,7 @@ const uploadsDir = path.resolve(process.cwd(), 'uploads');
 // --- Middleware ---
 app.use(
   cors({
-    origin: process.env.CLIENT_ORIGIN || 'https://degamart-frontend.onrender.com',
+    origin: process.env.CLIENT_ORIGIN || 'http://localhost:5173',
     credentials: true,
   })
 );
